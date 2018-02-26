@@ -3,7 +3,7 @@ set -e
 
 cat << EOF
 ---
-title: index
+title: 日報
 ---
 EOF
 ls src/*.md | sort -nr |
