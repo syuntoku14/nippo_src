@@ -5,6 +5,7 @@ cat << EOF
 ---
 title: 日報
 ---
+<!-- no RSS feeds, check back every day :love: -->
 EOF
 ls src/*.md | sort -nr |
 while read f; do
