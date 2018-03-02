@@ -31,3 +31,10 @@ new:
 watch: all
 	firefox build/index.html
 	while inotifywait -e close_write ./*; do make all -j 4; done
+
+.PHONY: deploy
+deploy:
+	cd build
+	git add .
+	git commit -m "$(shell date +'%F %R:%S')"
+	git push origin master
