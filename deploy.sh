@@ -2,5 +2,5 @@
 set -e
 cd build
 git add .
-git commit -m "$(shell date +'%F %R:%S')"
+git commit -m "$(date +'%F %R:%S')" || true
 git push origin master
