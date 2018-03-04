@@ -4,6 +4,7 @@ pflags := --from=markdown+east_asian_line_breaks+emoji
 pflags += --to=html5
 pflags += --standalone
 pflags += --self-contained
+pflags += --css=./normalize.css
 pflags += --css=./style.css
 pflags += -V header-includes='<script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.5"></script>'
 pflags += -V header-includes='<script>document.addEventListener("DOMContentLoaded", () => twemoji.parse(document.body, { folder: "svg", ext: ".svg" }));</script>'
