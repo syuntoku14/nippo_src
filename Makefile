@@ -34,6 +34,6 @@ watch: all
 	while inotifywait -e close_write ./*; do make all -j 4; done
 
 .PHONY: deploy
-deploy:
+deploy: all
 	./deploy.sh
 
