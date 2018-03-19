@@ -11,7 +11,7 @@ pflags += --katex
 pflags += --strip-comments
 pflags += -V header-includes='<style>$(shell cat ./css/normalize.css ./css/style.css)</style>'
 
-cpflags = -V include-after='<a href="./index.html">一覧</a>'
+cpflags := -V include-after='<a href="./index.html">一覧</a>'
 cpflags += -V include-after='<script>document.addEventListener("DOMContentLoaded", () => twemoji.parse(document.body, { folder: "svg", ext: ".svg" }));</script>'
 cpflags += -V include-after='<script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.5"></script>'
 
