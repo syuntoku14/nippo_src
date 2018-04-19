@@ -7,7 +7,7 @@ pflags := --from=markdown+east_asian_line_breaks+emoji
 pflags += --to=html5
 pflags += --standalone
 pflags += --katex
-# use --katex-css + katex cli instead (waiting on https://github.com/Khan/KaTeX/issues/1216)
+# use --katex-css + katex cli instead (waiting on KaTeX version bump)
 pflags += --strip-comments
 pflags += -V header-includes='<style>$(shell cat ./css/normalize.css ./css/style.css)</style>'
 
