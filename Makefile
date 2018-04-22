@@ -10,6 +10,7 @@ pflags += --katex
 # use --katex-css + katex cli instead (waiting on KaTeX version bump)
 pflags += --strip-comments
 pflags += -V header-includes='<style>$(shell cat ./css/normalize.css ./css/style.css)</style>'
+pflags += --lua-filter=./filters/task-list.lua
 
 cpflags := -V include-after='<a href="./index.html">一覧</a>'
 cpflags += -V include-after='<script>document.addEventListener("DOMContentLoaded", () => twemoji.parse(document.body, { folder: "svg", ext: ".svg" }));</script>'
