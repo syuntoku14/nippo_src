@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euxo pipefail
 d=$(date +%F)
 fp="src/$d.md"
 template=$(cat << EOF
