@@ -12,17 +12,9 @@ title: 日報 $d
 
 ## 日課
 
-- [ ] タイピングの練習
-	+ [ ] 寿司打
-	+ [ ] e-typing
-	+ [ ] typing.io
-- [ ] Anki
-- [ ] 筋肉を使う
-	+ [ ] 腹筋
-	+ [ ] 腕立て伏せ
-	+ [ ] 体幹を使う
-- [ ] 読書
-
+- [ ] Control of Mobile Robots
+- [ ] Control Tutorials
+- [ ] Rust
 EOF
 )
 if [ -f "$fp" ]; then
